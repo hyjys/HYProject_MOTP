@@ -8,11 +8,11 @@
       README.md   ← 이 파일        MODDING.md  ← docs/modding/MODDING.md        examples/ ← examples/
 
   그 스크립트가 함께 보는 것 넷 — 개발 문서 문자열 유출 · 깨진 상대 경로 링크 ·
-  예시 모드의 `gameVersion`이 현재 게임 버전과 같은 줄인지 · 아래 `WEB_DEMO_URL`이 아직
-  안 채워졌는지(이건 경고만 한다).
+  예시 모드의 `gameVersion`이 현재 게임 버전과 같은 줄인지 · 채워야 할 자리표시가
+  남아 있는지(이건 경고만 한다).
 
-  **올리기 전에 손봐야 하는 자리는 `WEB_DEMO_URL` 하나뿐이다**(세 언어 절에 각각 있다). 웹 데모는
-  v0.7.0에서 멈춘 판이라, 그 주소가 한 번 정해지면 더 바뀌지 않는다.
+  **웹 데모 주소는 `https://hyproj.com/play/motp/`로 정해졌다**(2026-09-29, 세 언어 절에 각각 있다).
+  웹 데모는 v0.7.0에서 멈춘 판이라 이 주소는 더 바뀌지 않는다 — 올리기 전에 손볼 자리는 이제 없다.
   버전 숫자와 내려받기 주소는 **일부러 안 적었다** — 릴리스 태그가 `latest` 고정이라
   링크가 버전과 무관하고, 그래서 판을 올려도 이 문서는 낡지 않는다.
 
@@ -46,7 +46,7 @@
 |---|---|
 | **PC판 (Windows / Linux)** | [**HY 런처**](https://hyproj.com)로 설치 — 권장 |
 | **압축본 (수동)** | [Releases](https://github.com/inoyu4649/HYProject_MOTP/releases/latest)의 `MOTP_<버전>_windows_x64.zip` / `MOTP_<버전>_linux_x64.tar.gz` — 풀어서 바로 실행 |
-| **웹 데모 (프롤로그)** | v0.7.0 판에서 멈춘 채로 남아 있습니다 — `WEB_DEMO_URL` |
+| **웹 데모 (프롤로그)** | v0.7.0 판에서 멈춘 채로 남아 있습니다 — [**hyproj.com/play/motp**](https://hyproj.com/play/motp/) |
 
 - **설치와 업데이트는 HY 런처가 맡습니다**(v0.7.0부터). 게임 안의 「업데이트 확인」은 없습니다.
   단독 설치본(EXE · MSI · DEB)은 [v0.7.0](https://github.com/inoyu4649/HYProject_MOTP/releases/tag/v0.7.0)이
@@ -183,7 +183,7 @@ Installing and updating is the launcher's job; **v0.7.0 was the last
 [standalone installer](https://github.com/inoyu4649/HYProject_MOTP/releases/tag/v0.7.0)** (EXE · MSI · DEB).
 From v0.8.0 each [release](https://github.com/inoyu4649/HYProject_MOTP/releases/latest) also carries a plain
 `.zip` (Windows) / `.tar.gz` (Linux) — unpack and run, no launcher needed.
-The browser demo (prologue only) stays frozen at v0.7.0: `WEB_DEMO_URL`. Saves from a standalone install aren't shared automatically —
+The browser demo (prologue only) stays frozen at v0.7.0: [**hyproj.com/play/motp**](https://hyproj.com/play/motp/). Saves from a standalone install aren't shared automatically —
 copy the files from its `save/` folder into the launcher install's `save/` to carry on.
 
 **Contents** — 40 puzzles across 162 maps · 106 readable in-world documents (each with a translation
@@ -228,7 +228,7 @@ The game is in **Early Access**: `0.x` means there's more to add, not that it's 
 [v0.7.0](https://github.com/inoyu4649/HYProject_MOTP/releases/tag/v0.7.0)が最後**（EXE・MSI・DEB）でした。
 v0.8.0からは[リリース](https://github.com/inoyu4649/HYProject_MOTP/releases/latest)に `.zip`（Windows）/
 `.tar.gz`（Linux）も並びます — 展開してそのまま起動でき、ランチャーは要りません。
-ブラウザ版デモ（プロローグまで）はv0.7.0のまま更新されません: `WEB_DEMO_URL`。単体版のセーブは自動では引き継がれません — その `save/`
+ブラウザ版デモ（プロローグまで）はv0.7.0のまま更新されません: [**hyproj.com/play/motp**](https://hyproj.com/play/motp/)。単体版のセーブは自動では引き継がれません — その `save/`
 フォルダのファイルをランチャー版の `save/` へ移せば続きから遊べます。
 
 **内容** — パズル40種／マップ162枚／閲覧できる作中文書106種（各文書に翻訳切替）／実績50種／
