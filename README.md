@@ -11,7 +11,8 @@
   예시 모드의 `gameVersion`이 현재 게임 버전과 같은 줄인지 · 아래 `WEB_DEMO_URL`이 아직
   안 채워졌는지(이건 경고만 한다).
 
-  **올리기 전에 손봐야 하는 자리는 `WEB_DEMO_URL` 하나뿐이다**(세 언어 절에 각각 있다).
+  **올리기 전에 손봐야 하는 자리는 `WEB_DEMO_URL` 하나뿐이다**(세 언어 절에 각각 있다). 웹 데모는
+  v0.7.0에서 멈춘 판이라, 그 주소가 한 번 정해지면 더 바뀌지 않는다.
   버전 숫자와 내려받기 주소는 **일부러 안 적었다** — 릴리스 태그가 `latest` 고정이라
   링크가 버전과 무관하고, 그래서 판을 올려도 이 문서는 낡지 않는다.
 
@@ -43,12 +44,17 @@
 
 | | |
 |---|---|
-| **웹 데모 (프롤로그)** | 설치 없이 브라우저에서 바로 — `WEB_DEMO_URL` |
-| **PC판 (Windows / Linux)** | [**HY 런처**](https://hyproj.com)로 설치 · 단독 설치본은 [v0.7.0](https://github.com/inoyu4649/HYProject_MOTP/releases/tag/v0.7.0)이 마지막 |
+| **PC판 (Windows / Linux)** | [**HY 런처**](https://hyproj.com)로 설치 — 권장 |
+| **압축본 (수동)** | [Releases](https://github.com/inoyu4649/HYProject_MOTP/releases/latest)의 `MOTP_<버전>_windows_x64.zip` / `MOTP_<버전>_linux_x64.tar.gz` — 풀어서 바로 실행 |
+| **웹 데모 (프롤로그)** | v0.7.0 판에서 멈춘 채로 남아 있습니다 — `WEB_DEMO_URL` |
 
-- **웹 데모는 프롤로그까지입니다.** 본편은 PC판에서 이어집니다.
-- **v0.7.0부터 설치와 업데이트는 HY 런처가 맡습니다.** 게임 안의 「업데이트 확인」은 없어졌습니다.
-  단독 설치본(EXE · MSI · DEB)은 **v0.7.0이 마지막**이고, 그 뒤의 판은 런처로만 받을 수 있습니다.
+- **설치와 업데이트는 HY 런처가 맡습니다**(v0.7.0부터). 게임 안의 「업데이트 확인」은 없습니다.
+  단독 설치본(EXE · MSI · DEB)은 [v0.7.0](https://github.com/inoyu4649/HYProject_MOTP/releases/tag/v0.7.0)이
+  마지막이었습니다.
+- **런처 없이 받고 싶다면** v0.8.0부터 Releases에 압축본이 함께 올라갑니다. 푼 폴더 안의 `MOTP.exe`(Linux는
+  `MOTP`)를 실행하면 세이브·모드·로그가 그 폴더 옆에 생깁니다. 업데이트는 새 압축본을 받아 `save/`·`mods/`를
+  옮겨 주면 됩니다 — 이 일을 대신 해 주는 것이 런처입니다.
+- **웹 데모는 v0.7.0이 마지막 판입니다.** 프롤로그까지만 담겨 있고, 더 갱신되지 않습니다.
 - **PC판 게임은 인터넷이 필요 없습니다.** 설치 후 완전히 오프라인으로 끝까지 진행됩니다 — 정답
   확인도 바깥에 묻지 않습니다. 새 판이 나왔는지 보는 일은 이제 런처가 하고, 게임은 아무것도 묻지
   않습니다.
@@ -128,7 +134,7 @@ PC판은 **모드를 지원합니다.** 게임 폴더의 `mods/`에 폴더를 �
 
 이 게임은 생성형 AI를 사용해 제작했습니다.
 
-- **코드** — Claude (~v0.5.2) · ChatGPT (v0.6.0~)
+- **코드** — Claude · ChatGPT
 - **이미지 에셋** — ChatGPT (GPT-Image) · Gemini (Nano Banana)
 
 ---
@@ -171,12 +177,13 @@ documents, and memories that don't line up. The subject is **record and forgetti
 story, and no chapter ever depicts the moment or method of a death: mourning comes before fear.
 It does, however, deal directly with **loss, grief and self-blame.**
 
-**Play** — Browser demo (prologue only): `WEB_DEMO_URL` ·
-Windows / Linux: install through the [**HY Launcher**](https://hyproj.com)
+**Play** — Windows / Linux: install through the [**HY Launcher**](https://hyproj.com)
 (Windows 10/11 x64 or Linux x64, fullscreen, **fully offline** after installation.)
-From v0.7.0 on, installing and updating is the launcher's job. **v0.7.0 is the last
-[standalone release](https://github.com/inoyu4649/HYProject_MOTP/releases/tag/v0.7.0)** (EXE · MSI · DEB);
-later versions are launcher-only. Saves from a standalone install aren't shared automatically —
+Installing and updating is the launcher's job; **v0.7.0 was the last
+[standalone installer](https://github.com/inoyu4649/HYProject_MOTP/releases/tag/v0.7.0)** (EXE · MSI · DEB).
+From v0.8.0 each [release](https://github.com/inoyu4649/HYProject_MOTP/releases/latest) also carries a plain
+`.zip` (Windows) / `.tar.gz` (Linux) — unpack and run, no launcher needed.
+The browser demo (prologue only) stays frozen at v0.7.0: `WEB_DEMO_URL`. Saves from a standalone install aren't shared automatically —
 copy the files from its `save/` folder into the launcher install's `save/` to carry on.
 
 **Contents** — 40 puzzles across 162 maps · 106 readable in-world documents (each with a translation
@@ -193,7 +200,7 @@ TIMES club at the 2026 HAFS Festival "花様年華 : in bloom". Everything from 
 original to this game.
 
 **Made by** LEE MINGI (이민기 · 李民基), 2026.07.19 — 2026.09.17. Built with generative AI:
-**Claude (~v0.5.2)** and **ChatGPT (v0.6.0~)** for code, **ChatGPT (GPT-Image)** and
+**Claude** and **ChatGPT** for code, **ChatGPT (GPT-Image)** and
 **Gemini (Nano Banana)** for image assets.
 Font and open-source licenses ship in the `docs/` folder of the installed game and are listed in the
 in-game credits.
@@ -215,12 +222,13 @@ The game is in **Early Access**: `0.x` means there's more to add, not that it's 
 生まれます。主題は学校の怪談ではなく **「記録と忘却」** であり、死の瞬間や手段はどの章でも直接
 描きません — 追悼が恐怖に先立ちます。ただし **喪失・哀悼・自責** は正面から扱います。
 
-**プレイ** — ブラウザ版デモ（プロローグまで）: `WEB_DEMO_URL` ·
-Windows / Linux版は [**HY ランチャー**](https://hyproj.com) からインストール
+**プレイ** — Windows / Linux版は [**HY ランチャー**](https://hyproj.com) からインストール
 （Windows 10/11 x64またはLinux x64・全画面専用・インストール後は**完全オフライン**で進行します。）
-v0.7.0からインストールと更新はランチャーが担います。**単体インストーラーは
-[v0.7.0](https://github.com/inoyu4649/HYProject_MOTP/releases/tag/v0.7.0)が最後**（EXE・MSI・DEB）で、
-以降の版はランチャーからのみ入手できます。単体版のセーブは自動では引き継がれません — その `save/`
+インストールと更新はランチャーが担います。**単体インストーラーは
+[v0.7.0](https://github.com/inoyu4649/HYProject_MOTP/releases/tag/v0.7.0)が最後**（EXE・MSI・DEB）でした。
+v0.8.0からは[リリース](https://github.com/inoyu4649/HYProject_MOTP/releases/latest)に `.zip`（Windows）/
+`.tar.gz`（Linux）も並びます — 展開してそのまま起動でき、ランチャーは要りません。
+ブラウザ版デモ（プロローグまで）はv0.7.0のまま更新されません: `WEB_DEMO_URL`。単体版のセーブは自動では引き継がれません — その `save/`
 フォルダのファイルをランチャー版の `save/` へ移せば続きから遊べます。
 
 **内容** — パズル40種／マップ162枚／閲覧できる作中文書106種（各文書に翻訳切替）／実績50種／
@@ -236,7 +244,7 @@ v0.7.0からインストールと更新はランチャーが担います。**単
 サークルTIMESが運営した脱出ゲーム〈Nightmare〉を原作としています。Chapter 1以降は本作独自の物語です。
 
 **制作** — <ruby>李民基<rt>イ・ミンギ</rt></ruby>（이민기 · LEE MINGI）、2026.07.19 — 2026.09.17。
-生成AIを使用しています： コードは **Claude（~v0.5.2）**・**ChatGPT（v0.6.0~）**、画像アセットは **ChatGPT (GPT-Image)** と
+生成AIを使用しています： コードは **Claude**・**ChatGPT**、画像アセットは **ChatGPT (GPT-Image)** と
 **Gemini (Nano Banana)**。フォント・オープンソースのライセンス原文はインストール後の `docs/`
 フォルダ、およびゲーム内のクレジット画面にあります。
 
